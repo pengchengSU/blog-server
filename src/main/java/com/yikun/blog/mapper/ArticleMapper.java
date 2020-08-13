@@ -10,4 +10,6 @@ import java.util.List;
 @Repository
 public interface ArticleMapper {
      List<Article> selectAll();
+
+     Article selectOne(Integer id);
 }

@@ -18,4 +18,10 @@ public class ArticleMapperTest {
         List<Article> articles = articleMapper.selectAll();
         System.out.println(articles);
     }
+
+    @Test
+    public void selectOne(){
+        Article article = articleMapper.selectOne(1);
+        System.out.println(article);
+    }
 }

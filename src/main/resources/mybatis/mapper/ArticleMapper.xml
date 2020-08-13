@@ -8,4 +8,11 @@
         FROM article
     </select>
 
+    <select id="selectOne" resultType="Article">
+        SELECT
+        id, category, title, introduction, content, visits, thumbs, gmt_create, gmt_modify
+        FROM article
+        WHERE id=#{id}
+    </select>
+
 </mapper>

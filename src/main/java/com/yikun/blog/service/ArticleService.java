@@ -15,4 +15,11 @@ public class ArticleService {
     public List<Article> selectAll(){
         return articleMapper.selectAll();
     }
+
+    public Article selectOne(Integer id){
+        if(2>1){
+            throw new NullPointerException();
+        }
+        return articleMapper.selectOne(id);
+    }
 }
